@@ -20,6 +20,8 @@ jobs:
         run: ./scripts/clone-repos.sh CI
       - name: Generate page
         run: ./scripts/generate-page.sh
+      - name: Add GSC files
+        run: cp .gsc/* page
       - uses: actions/upload-pages-artifact@v4
         with:
           path: page
