@@ -25,4 +25,4 @@ clone https://github.com/wayfolio/compositor-support.git \
 
 clone https://github.com/wayfolio/wayfolio.git \
       wayfolio \
-      HEAD # todo
+      2cce1aafb71bfd8fede9b3cf78f7859c265e3ac2
