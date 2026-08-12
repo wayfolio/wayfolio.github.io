@@ -25,4 +25,4 @@ clone https://github.com/wayfolio/compositor-support.git \
 
 clone https://github.com/wayfolio/wayfolio.git \
       wayfolio \
-      11baee8ee417e397d9747e54edffb4001287322b
+      53fe19d1ee9b416cf1c7e87c155ebfcb43c27cdc
