@@ -52,3 +52,13 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           label-name: 'auto-publish'
           title-template: 'Auto Publish Failed'
+  keepalive:
+    name: Keepalive Workflow
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - run: gh api -X PUT repos/${{ github.repository }}/actions/workflows/publish-page.yml/enable
+        env:
+          GH_TOKEN: ${{ github.token }}
